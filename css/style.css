@@ -6,33 +6,34 @@
 
 }
 
-body {
-    margin: 0;
+body,
+.container,
+.calculator,
+.display-container,
+.top-disp,
+.bot-disp,
+.input-container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+body {
+    margin: 0;
     width: 100vw;
     height: 100vh;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .calculator {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .display-container {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     font-family: var(--screen-font);
     border: 2px solid var(--dark-grey);
@@ -40,11 +41,9 @@ body {
     margin-bottom: 5px;
 }
 
-.history-disp {
-    display: flex;
-    flex-direction: row;
+.top-disp,
+.bot-disp {
     justify-content: flex-end;
-    align-items: center;
 
     width: var(--disp-width);
 }
@@ -57,24 +56,12 @@ body {
     padding-right: 10px;
 }
 
-.current-disp {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-
-    width: var(--disp-width);
-}
-
 .current-digits {
 
 }
 
 .input-container {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .inputs {
