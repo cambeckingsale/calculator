@@ -1,0 +1,87 @@
+:root {
+    --screen-font: 'Major Mono Display', sans-serif;
+    --disp-width: 150px;
+    --dark-grey: rgb(70, 70, 70);
+    --border-radius: 5px;
+
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--screen-font);
+    border: 2px solid var(--dark-grey);
+    border-radius: var(--border-radius);
+    margin-bottom: 5px;
+}
+
+.history-disp {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: var(--disp-width);
+}
+
+.history-digits {
+
+}
+
+.current-operator {
+    padding-right: 10px;
+}
+
+.current-disp {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: var(--disp-width);
+}
+
+.current-digits {
+
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2px;
+    width: var(--disp-width);
+}
+
