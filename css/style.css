@@ -42,8 +42,8 @@ body {
 
 .band {
     height: 12px;
-    border: 2px solid var(black);
-    border-radius: 2px;
+    border: 1px solid black;
+    border-radius: 1px;
 
     background-color: var(--dark-grey);
 }
@@ -68,7 +68,7 @@ body {
     
     padding: 5px;
 
-    border: 2px solid var(black);
+    border: 2px solid black;
     border-radius: var(--border-radius);
 
     background-color: var(--dark-grey);
