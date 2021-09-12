@@ -92,6 +92,10 @@ function posValToDisp(val, decimalPoint) {
 
 function valToDisp(val) {
 
+    if (val === '#div/0') {
+        return '#DIV/0'
+    }
+
     let decimalPoint = 0;
     if (val.slice(val.length -1) === '.') {
         // deal with decimal places
@@ -100,7 +104,7 @@ function valToDisp(val) {
 
     if (val > 99999999 | val < -9999999 | val === NaN) {
         // beyond the bounds of our screen
-        return 'ERRROR'
+        return 'ERROR'
     }
 
     if (val < 0) {
